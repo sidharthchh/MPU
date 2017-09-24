@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Bootstrap 3 file upload</title>
+
+
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-static-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Indee</a>
+        </div>
+
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Big File Uploader</a></li>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="fileupload fileupload-new" data-provides="fileupload">
+    <span class="btn btn-primary btn-file"><span class="fileupload-new">Select file</span>
+    <span class="fileupload-exists">Upload Another</span>         <input id="files" name="files" type="file"/></span>
+    <span class="fileupload-preview"></span>
+    <a href="#" class="close fileupload-exists" data-dismiss="fileupload" style="float: none">×</a>
+</div>
+<div class="loading">
+    <div class="loader"></div>
+    <br/>
+    <h2>Uploading...</h2>
+    <h4>Please do not reload! Doing so will terminate the upload.</h4>
+</div>
+<div class="container error-message">
+    <div class="alert alert-danger">
+    </div>
+</div>
+<div class="container success-message">
+    <div class="alert alert-success">
+    </div>
+</div>
+<nav class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="container">
+        <a class="navbar-brand" href="#">Copyright 2017</a>
+    </div>
+</nav>
+
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="/static/js/aws-sdk-2.122.0.js"></script>
+<script src="/static/js/home.js"></script>
+<script src="/static/js/index.js"></script>
+<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc1/js/bootstrap.min.js"></script>
+</body>
+</html>
